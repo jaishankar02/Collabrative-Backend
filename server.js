@@ -125,6 +125,6 @@ app.post('/join-room', async (req, res) => {
 });
 
 // Start the server
-server.listen(8000, () => {
+server.listen(process.env.PORT, () => {
     console.log('Server started on port 8000');
 });
